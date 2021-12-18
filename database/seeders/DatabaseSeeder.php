@@ -20,9 +20,9 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             // OpportunitiesSeeder::class,
-            //  CategorySeeder::class,
-            // CountrySeeder::class,
-            UserSeeder::class,
+             CategorySeeder::class,
+            CountrySeeder::class,
+            // UserSeeder::class,
            
             // OpportunitySeeder::class,
             // FavouriteSeeder::class,

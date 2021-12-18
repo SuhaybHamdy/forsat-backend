@@ -16,21 +16,22 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        // User::factory(20)->create();
+      
+        User::factory(20)->create();
         // ->each(function($user){
         //     Question::factory()
         // });
-        User::factory(4)->create()->each(function($user){
-            Question::factory()->create([
-                'created_by'=>$user->id
+        // User::factory(4)->create()->each(function($user){
+        //     Question::factory()->create([
+        //         'created_by'=>$user->id
 
-            ])->each(function($qestions){
-                Comment::factory(rand(1,4))->create([
-                    'question_id'=>$qestions->id
+        //     ])->each(function($qestions){
+        //         Comment::factory(rand(1,4))->create([
+        //             'question_id'=>$qestions->id
 
 
-                ]);
-            });
-        });
+        //         ]);
+        //     });
+        // });
     }
 }
