@@ -73,7 +73,7 @@ class AuthController extends Controller
         $tokenResult =   $user->createToken("Personal Access Token");
 //         $token = $tokenResult->token;
 //         $token->expires_at = Carbon::now()->addWeeks(1);
-        $token->save();
+//         $token->save();
 
 
         return  response([
