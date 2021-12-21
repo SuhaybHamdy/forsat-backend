@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
             // OpportunitiesSeeder::class,
              CategorySeeder::class,
             CountrySeeder::class,
-//             UserSeeder::class,
+            UserSeeder::class,
            
             OpportunitySeeder::class,
             // FavouriteSeeder::class,
