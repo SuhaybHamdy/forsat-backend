@@ -60,7 +60,7 @@ class AuthController extends Controller
     }
 
     public function logout(Request $request){
-         $request->user()->token()->revoke();
+         $request->user()->tokens()->delete();
          return response('Successfully logged out',200);
     }
 
@@ -70,11 +70,11 @@ class AuthController extends Controller
 
     private function getResponse(User $user){
 
-           $tokenResult =   $user->createToken("Personal Access Token");
+           $tokenResult =   $user->createToken("Personal Access Token")->plainTextToken;
         // $tokenResult->$token
-        $token = $tokenResult->token->plainTextToken;
+//         $token = $tokenResult->token->plainTextToken;
         // $token->expires_at = Carbon::now()->addWeeks(1);
-        $token->save();
+//         $token->save();
 
 //         $tokenResult =   $user->createToken("Personal Access Token");
 //         $token = $tokenResult->token->plainTextToken;
@@ -83,9 +83,9 @@ class AuthController extends Controller
 
 
         return  response([
-            'accessToken' => $tokenResult->accessToken,
+//             'accessToken' => $tokenResult->accessToken,
             'tokenType' => "Bearer",
-            'token'=>$tokenResult->plainTextToken
+            'token'=>$tokenResult
 //             'expiresAt' => Carbon::parse($token->expires_at)->toDateTimeString()
         ],200);
     }
