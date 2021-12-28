@@ -71,9 +71,9 @@ class AuthController extends Controller
     private function getResponse(User $user){
 
         $tokenResult =   $user->createToken("Personal Access Token");
-//         $token = $tokenResult->token;
+        $token = $tokenResult->token;
 //         $token->expires_at = Carbon::now()->addWeeks(1);
-//         $token->save();
+        $token->save();
 
 
         return  response([
