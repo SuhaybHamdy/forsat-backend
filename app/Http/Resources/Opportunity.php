@@ -19,6 +19,7 @@ class Opportunity extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
+            'description' => $this->description,
             'category' => new Category($this->category),
             'country' => new Country($this->country),
             'deadline' => $this->deadline->toDayDateTimeString(),
