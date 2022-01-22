@@ -24,10 +24,10 @@ class DatabaseSeeder extends Seeder
 //             CountrySeeder::class,
 //             UserSeeder::class,
            
-            OpportunitySeeder::class,
-            // FavouriteSeeder::class,
-            // QuestionSeeder::class,
-            // CommentSeeder::class,
+//             OpportunitySeeder::class,
+            FavouriteSeeder::class,
+            QuestionSeeder::class,
+            CommentSeeder::class,
         ]);
         // $this->call(CategorySeeder::class);
         // $this->call(CountrySeeder::class);
