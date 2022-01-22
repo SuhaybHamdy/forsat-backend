@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
         // ->each(function($user){
         //     Question::factory()
         // });
-        User::factory(4)->create()->each(function($user){
+        User::factory(55)->create()->each(function($user){
             Question::factory()->create([
                 'created_by'=>$user->id
 
