@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use CommentSeeder;
 // use Database\Question\QuestionSeeder;
+use Database\Seeders\QuestionSeeder as SeedersQuestionSeeder;
 use Illuminate\Database\Seeder;
 
 
