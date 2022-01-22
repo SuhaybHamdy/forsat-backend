@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
            
 //             OpportunitySeeder::class,
             FavouriteSeeder::class,
-            QuestionSeeder::class,
+            SeedersQuestionSeeder::class,
             CommentSeeder::class,
         ]);
         // $this->call(CategorySeeder::class);
