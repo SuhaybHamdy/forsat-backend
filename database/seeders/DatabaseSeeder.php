@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use CommentSeeder;
-use Database\Question\QuestionSeeder;
+// use Database\Question\QuestionSeeder;
 use Illuminate\Database\Seeder;
 
 
@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
             FavouriteSeeder::class,
             SeedersQuestionSeeder::class,
             CommentSeeder::class,
+            
         ]);
         // $this->call(CategorySeeder::class);
         // $this->call(CountrySeeder::class);
